@@ -1,0 +1,33 @@
+{
+	"name": "HCL",
+    "version": "0.0.1",
+    "publisher": "wholroyd",
+    "author" : {
+        "name": "William Holroyd"
+    },
+	"description": "HashiCorp Configuration Language support for Visual Studio Code",
+	"displayName": "HCL",
+	"engines": {
+		"vscode": "0.10.x"
+	},
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/wholroyd/vscode-hcl.git"
+    },
+	"categories": [
+		"Languages"
+	],
+	"contributes": {
+		"languages": [{
+			"id": "hcl",
+			"aliases": ["HCL", "hcl"],
+			"extensions": [".tf",".tfvars",".nomad", ".hcl"],
+            "configuration": "./hcl.configuration.json"
+		}],
+		"grammars": [{
+			"language": "hcl",
+			"scopeName": "source.hcl",
+			"path": "./syntaxes/hcl.json"
+		}]
+	}
+}
