@@ -4,43 +4,24 @@
 
 This extension adds language colorization support for the HCL language to VS Code.
 
-<img src="https://raw.githubusercontent.com/wholroyd/vscode-hcl/master/example.png" style="width:864; height:645">
+![IDE](https://raw.githubusercontent.com/wholroyd/vscode-hcl/master/example.png)
 
 ## Using
 
 First, you will need to install Visual Studio Code `0.10`. In the command palette (`cmd-shift-p`) select `Install Extension` and choose `HCL`.  
 
-## Extending the Extension
+## Contributing
 
-You can set up a development environment for debugging the extension during extension development.
+If you are interested in making this extension better, I will gladly take pull requests that expand it to add intellisense, hovers and validators. If you're not familiar with working on Visual Studio Code extensions, check out the VS Code extenders documentation at
+https://code.visualstudio.com/docs.
 
-First make sure you do not have the extension installed in `~/.vscode/extensions`.  
+To get started on the extension...
 
-```bash
-rm -rf ~/.vscode/extensions/wholroyd.HCL
-cd ~
-git clone https://github.com/wholroyd/vscode-hcl
-cd vscode-hcl
-code . 
-```
+1. Go to the Debug viewlet and select `Launch Extension` then hit run (`F5`). This will launch a second instance of Code with the extension from the first window loaded.
 
-You can now go to the Debug viewlet and select `Launch Extension` then hit run (`F5`).
+2. As you make changes, you can also reload (`Ctrl+R` or `Cmd+R` on Mac) the second Code window to load any changes.
 
-### What's in the folder
-* This folder contains all of the files necessary for your extension
-* `package.json` - this is the manifest file in which you declare your language support and define
-the location of the grammar file that has been copied into you extension.
-* `syntaxes/hcl.json` - this is the TextMate grammar file that is used for tokenization
-* `hcl.configuration.json` - this the language configuration, defining the tokens that are used for
-comments and brackets.
-
-### Make changes
-* you can relaunch the extension from the debug toolbar after making changes to the files listed above
-* you can also reload (`Ctrl+R` or `Cmd+R` on Mac) the VS Code window with your extension to load your changes
-
-### Add more language features
-* To add features such as intellisense, hovers and validators check out the VS Code extenders documentation at
-https://code.visualstudio.com/docs
+If you have a previous release of the extension installed and you perform these steps, Code will temporarily override the locally installed version instead for the one you're working on for the second window. The first (main) window will remain to have the locally installed, prior version installed and enabled until an update is available.
 
 ## License
 [MIT](LICENSE)

@@ -17,10 +17,15 @@ structure "arg0" "arg1" "arg2" {
         test
     EOT
     array = [ "foo", "bar", 42 ]
-    map = { "foo" : true, "bar" : "baz" }
+    map = { "foo" : true, "bar" : "baz"}
     
     nested-structure {
         foo = 348743
         bar = "348743Gb"
     }
 }
+
+
+
+
+

@@ -1,6 +1,6 @@
 {
 	"name": "HCL",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "publisher": "wholroyd",
     "author" : {
         "name": "William Holroyd"
@@ -21,7 +21,7 @@
 		"languages": [{
 			"id": "hcl",
 			"aliases": ["HCL", "hcl"],
-			"extensions": [".tf",".tfvars",".nomad", ".hcl"],
+			"extensions": [".tf",".tfvars",".nomad", ".hcl", "Appfile"],
             "configuration": "./hcl.configuration.json"
 		}],
 		"grammars": [{

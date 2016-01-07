@@ -6,7 +6,8 @@
         "tf",
         "tfvars",
         "nomad",
-        "hcl"
+        "hcl",
+        "appfile"
     ],
     "patterns": [
         { "include": "#comments" },      
@@ -176,7 +177,7 @@
                                 "1": { "name": "string.quoted.double.hcl" },
                                 "2": { "name": "keyword.operator.hcl" }              
                             },
-                            "end": "(?<!\\2)$",
+                            "end": "(?<!\\2)\\s*($|(?=\\}))",
                             "endCaptures" : {
                                 "0": { "name": "keyword.operator.hcl" }  
                             },
