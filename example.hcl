@@ -3,25 +3,24 @@
 /*
 Multi line comment block
 */
-
-construct {
-    usingvar = "${var.test}"
-    usingmodule = "${module.test}"
-    interpolation = "test-${lookup(element(var.test0, "bar"))}-test"
-    constant_decimal = 1024
-    constant_hexidecimal = 0xDEADBEEF
-    constant_size = 1024Kb
-    constant_boolean = true
-    string = "true"
+structure { }
+structure "arg0" { }
+structure "arg0" "arg1" { }
+structure "arg0" "arg1" "arg2" { 
+    interpolation = "${lookup(element(var.foo, "bar"))}"
+    decimal = -42 
+    hexidecimal = 0xDEADBEEF
+    size = 1024Kb
+    boolean = true
+    string = "test"
+    heredoc = <<EOT
+        test
+    EOT
+    array = [ "foo", "bar", 42 ]
+    map = { "foo" : true, "bar" : "baz" }
     
-    nested-construct {
+    nested-structure {
         foo = 348743
         bar = "348743Gb"
     }
 }
-construct "arg0" { }
-construct "arg0" "arg1" { }
-construct "arg0" "arg1" "arg2" { }
-
-
-
