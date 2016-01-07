@@ -4,7 +4,7 @@
 
 This extension adds language colorization support for the HCL language to VS Code.
 
-![IDE](http://imgur.com/Mm0SBoK.png)
+<img src="https://raw.githubusercontent.com/wholroyd/vscode-hcl/master/example.png" style="width:864; height:645">
 
 ## Using
 
