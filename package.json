@@ -1,22 +1,29 @@
 {
 	"name": "HCL",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "publisher": "wholroyd",
-    "author" : {
+    "author": {
         "name": "William Holroyd"
     },
+	"license": "MIT",
+	"icon": "icon.png",
 	"description": "HashiCorp Configuration Language support for Visual Studio Code",
 	"displayName": "HCL",
-	"engines": {
-		"vscode": "0.10.x"
-	},
     "repository": {
         "type": "git",
         "url": "https://github.com/wholroyd/vscode-hcl.git"
     },
+	"bugs": {
+		"url": "https://github.com/wholroyd/vscode-hcl/issues"
+	},
 	"categories": [
-		"Languages"
+		"Languages",
+		"Snippets",
+		"Linters"
 	],
+	"engines": {
+		"vscode": "0.10.x"
+	},
 	"contributes": {
 		"languages": [{
 			"id": "hcl",
