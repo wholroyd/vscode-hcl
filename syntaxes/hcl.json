@@ -140,7 +140,7 @@
         "variable-interpolation-reference" : {
             "patterns" : [
                 {
-                    "match": "\\b(var|module|terraform_remote_state)\\.([\\w-]+)\\b",
+                    "match": "\\b(var|module|terraform_remote_state)((\\.[\\w-]+)*)\\b",
                     "captures": {
                         "1": { "name": "storage.modifier.hcl" },
                         "2": { "name": "entity.name.type.hcl" }
