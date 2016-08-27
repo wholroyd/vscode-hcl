@@ -61,7 +61,7 @@
                     ]
                 },
                 {
-                    "begin": "([\\w-]+)((?:\\s*\"[\\w\\s-]+\")*)\\s*\\{",
+                    "begin": "([\\w-]+)((?:\\s*\"[^\"]*\")*)\\s*\\{",
                     "beginCaptures": {
                         "0": { "name": "meta.function.hcl" },
                         "1": { "name": "storage.type.hcl" },
@@ -140,7 +140,7 @@
         "variable-interpolation-reference" : {
             "patterns" : [
                 {
-                    "match": "\\b(var|module|terraform_remote_state)((\\.[\\w-]+)*)\\b",
+                    "match": "\\b([\\w-]+)((\\.[\\w-]+)*)\\b",
                     "captures": {
                         "1": { "name": "storage.modifier.hcl" },
                         "2": { "name": "entity.name.type.hcl" }
