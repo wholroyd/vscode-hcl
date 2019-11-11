@@ -1,6 +1,6 @@
 {
-	"name": "HCL",
-    "version": "0.0.4",
+	"name": "hcl",
+    "version": "0.1.",
     "publisher": "wholroyd",
     "author": {
         "name": "William Holroyd"
@@ -17,7 +17,7 @@
 		"url": "https://github.com/wholroyd/vscode-hcl/issues"
 	},
 	"categories": [
-		"Languages",
+		"Programming Languages",
 		"Snippets",
 		"Linters"
 	],
@@ -34,7 +34,7 @@
 		"grammars": [{
 			"language": "hcl",
 			"scopeName": "source.hcl",
-			"path": "./syntaxes/hcl.json"
+			"path": "./syntaxes/hcl2.json"
 		}]
 	}
 }

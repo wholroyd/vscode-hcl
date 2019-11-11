@@ -1,8 +1,6 @@
 # HCL for Visual Studio Code
 
-[![Join the chat at https://gitter.im/wholroyd/vscode-hcl](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/wholroyd/vscode-hcl?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-
-This extension adds language colorization support for the HCL language to VS Code.
+This extension adds language colorization support for the HCL language to VS Code, allowing you to work with most of the Hashicorp product line, including Terraform, Consul, Vault, and Nomad. It currently supports both HCL version 1 and version 2, but support for HCL version 2 is very early and some features specific to it may not operate as expected just yet. 
 
 ![IDE](https://raw.githubusercontent.com/wholroyd/vscode-hcl/master/example.png)
 
