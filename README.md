@@ -1,6 +1,11 @@
 # HCL for Visual Studio Code
 
-[![Join the chat at https://gitter.im/wholroyd/vscode-hcl](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/wholroyd/vscode-hcl?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+## Development Status
+> ***The ownership of this extension has been transfered to HashiCorp and it's replacement can now be found at https://github.com/hashicorp/vscode-hcl. If you are interested in skipping straight to the extension for Visual Studio Code, it's available in the marketplace at https://marketplace.visualstudio.com/items?itemName=HashiCorp.HCL.***
+
+> ***As far as this repository is concerned, it will remain for public transparency and research purposes only, and will not be developed further***
+
+## Overview
 
 This extension adds language colorization support for the HCL language to VS Code.
 
